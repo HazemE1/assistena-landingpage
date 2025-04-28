@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "meta_author": "Assistena",
+    "meta_image": "",
+    "meta_description": "Assistena is a powerful AI Assistenat that helps students in their education and learning."
+  },
+  "site_info": {
+    "title": "Assistena",
+    "description": "Assistena is a powerful AI Assistenat that helps students in their education and learning.",
+    "base_url": "",
+    "logo": "/assets/imgs/logo/logo.png",
+    "logo_light": "/assets/imgs/logo/logo-light.png",
+    "logo_icon": "/assets/imgs/logo/logo-icon.png",
+    "logo_width": 115,
+    "logo_height": 32,
+    "logo_text": "Assistena"
+  },
+  "footer_info": {
+    "address": {
+      "name": "Sweden",
+      "link": "",
+      "iframe_src": ""
+    },
+    "email": "info@example.com",
+    "mobile": "+(08) 365 301 710",
+    "open_date": "Sun - Mon",
+    "open_time": "8:30 am - 7:30 pm",
+    "copyright": {
+      "enable": true,
+      "label": "© Alrights reserved by",
+      "company": "Assistena",
+      "link": "https://Assistena.com/"
+    }
+  },
+  "social": []
+}
