@@ -13,7 +13,7 @@ type Props = {
 };
 
 export const generateStaticParams = () => {
-  const blogs = getAllPages("/features-blogs/main");
+  const blogs = getAllPages("/features-blog/main");
   const paths = blogs.map((program) => ({
     title: program.slug,
   }));
@@ -22,7 +22,7 @@ export const generateStaticParams = () => {
 };
 
 export default function Page({ params }: Props) {
-  const blogs = getAllPages("/features-blogs/main");
+  const blogs = getAllPages("/features-blog/main");
 
   if (!(blogs && blogs.length)) {
     notFound();
