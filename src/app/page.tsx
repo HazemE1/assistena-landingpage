@@ -1,6 +1,4 @@
 import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
-
-// Components
 import SeoData from "@/components/tools/seo-data";
 import CRMHomeAbout from "@/components/elements/about/crm-home-about";
 import Brand1 from "@/components/elements/brand/brand1";

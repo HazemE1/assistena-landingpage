@@ -57,10 +57,7 @@ const CRMHero = ({ hero }: Props) => {
   const { title, sub_title, details, video, feature_1, feature_2, feature_3 } =
     hero.data;
 
-  const [isOpen3, setIsOpen3] = useState<boolean>(false);
-  const [isOpen2, setIsOpen2] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const containerRef = useRef<HTMLDivElement>(null!);
 
   useGSAP(
@@ -70,20 +67,13 @@ const CRMHero = ({ hero }: Props) => {
     { scope: containerRef }
   );
 
-  const closeDialog3 = () => {
-    setIsOpen3(!isOpen3);
-  };
-
-  const closeDialog2 = () => {
-    setIsOpen2(!isOpen2);
-  };
-
   const closeDialog = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
-      <section className="pt-[150px] lg:pt-[155px] xl:pt-[240px] pb-[50px] xl:pb-[100px] text-center bg-[url('/assets/imgs/background/bg.png')] bg-no-repeat bg-[#F9F6ED] bg-cover">
+      <section className="pt-[150px] lg:pt-[155px] xl:pt-[240px] pb-[50px] xl:pb-[100px] text-center bg-[#F9F6ED]">
         <div className="container" ref={containerRef}>
           <div className="pb-[35px] md:pb-[50px] lg:pb-[100px]">
             <div className="max-w-[242px] pb-[22px] mx-auto">
@@ -100,6 +90,7 @@ const CRMHero = ({ hero }: Props) => {
                     src="/assets/imgs/shape/shape-r-2.png"
                     className="max-w-[21px] md:max-w-[60px] absolute -top-[11px] md:-top-[28px] -left-[22px] md:-left-[50px] text-xs"
                     alt="shape"
+                    priority
                   />
                   {title}
                 </h1>
@@ -147,6 +138,8 @@ const CRMHero = ({ hero }: Props) => {
                   height={217}
                   src={feature_1.image}
                   alt="card img"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             )}
@@ -167,6 +160,8 @@ const CRMHero = ({ hero }: Props) => {
                     src={feature_2.image1}
                     className="rounded-full"
                     alt="team-image"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <Image
                     width={100}
@@ -174,6 +169,8 @@ const CRMHero = ({ hero }: Props) => {
                     src={feature_2.image2}
                     className="rounded-full -ms-[20px]"
                     alt="team-image"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div>
