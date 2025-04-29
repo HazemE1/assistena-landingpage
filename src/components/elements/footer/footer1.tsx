@@ -32,7 +32,7 @@ const Footer1 = ({ footerNav }: Props) => {
             </div>
           </div>
           <div className="col-span-1 lg:col-span-3 flex justify-between flex-wrap gap-y-[50px] gap-x-[60px]">
-            {footerNav &&
+            {/*footerNav &&
               footerNav.length &&
               footerNav.slice(0, 3).map((nav, i) => (
                 <div key={`footer_nav-${i}`}>
@@ -54,11 +54,11 @@ const Footer1 = ({ footerNav }: Props) => {
                     </ul>
                   )}
                 </div>
-              ))}
+              ))*/}
           </div>
         </div>
         <div className="flex flex-wrap justify-between gap-x-[60px] gap-y-[10px] py-[38px] flex-col md:flex-row items-center md:items-start border-t border-[#ffffff1a]">
-          {social && social.length && (
+          {/*social && social.length && (
             <ul className="flex gap-[24px]">
               {social.map((item, i) => (
                 <li key={`social_share-${i}`} className="leading-none">
@@ -66,7 +66,7 @@ const Footer1 = ({ footerNav }: Props) => {
                 </li>
               ))}
             </ul>
-          )}
+          )*/}
           {copyright && copyright.enable && (
             <p className="text-[16px] font-bold text-white-2">
               {copyright.label}{" "}
