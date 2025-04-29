@@ -6,7 +6,6 @@ import "@/style/globals.css";
 import "@/style/main.scss";
 import Footer1 from "@/components/elements/footer/footer1";
 import Header3 from "@/components/elements/header/header3";
-import ToolsComponent from "@/components/tools";
 import ScrollSmootherComponent from "@/components/tools/scroll-smoother";
 import ScrollTop from "@/components/tools/scroll-top";
 
