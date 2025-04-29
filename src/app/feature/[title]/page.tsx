@@ -40,6 +40,7 @@ export default function Page({ params }: Props) {
         title={blog.data.title || "Integration page"}
         meta_title={meta_title || "Integration page"}
         description={meta_description || "Integration page description"}
+        canonical={`/features/${params.title}`}
       />
       <BlogDetails blog={blog}>
         <div className="blog_details">

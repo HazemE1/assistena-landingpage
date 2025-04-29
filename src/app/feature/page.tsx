@@ -8,13 +8,13 @@ export default function Page() {
   const blogs = getAllPages("/features-blog/main");
 
   const { meta_title, meta_description } = blog.data.meta || {};
-  console.log(blog);
   return (
     <main>
       <SeoData
         title={blog.data.title || "Blog page"}
         meta_title={meta_title || "Blog page"}
         description={meta_description || "Blog page description"}
+        canonical="/features"
       />
       <MainFeature blog={blog} blogs={blogs} />
     </main>

@@ -25,7 +25,12 @@ export default function Page() {
 
   return (
     <main className="scroll-smooth">
-      <SeoData />
+      <SeoData
+        title="Assistena – Your AI Study Companion "
+        meta_title="Assistena – Your AI Study Companion "
+        description="Assistena is a free, AI-powered study platform designed to streamline your learning. Whether you're a student, self-learner, or just want to organize your study materials, Assistena offers powerful tools to enhance your study sessions."
+        canonical="/"
+      />
       <CRMHero hero={hero} />
       <Brand1
         brand={brand}

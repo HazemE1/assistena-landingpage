@@ -16,6 +16,7 @@ export default function Page() {
         title={blog.data.title || "Blog page"}
         meta_title={meta_title || "Blog page"}
         description={meta_description || "Blog page description"}
+        canonical="/blog"
       />
       <MainBlog blog={blog} blogs={blogs} />
     </main>
