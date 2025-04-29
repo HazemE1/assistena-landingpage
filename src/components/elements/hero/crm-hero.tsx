@@ -73,7 +73,7 @@ const CRMHero = ({ hero }: Props) => {
 
   return (
     <>
-      <section className="pt-[150px] lg:pt-[155px] xl:pt-[240px] pb-[50px] xl:pb-[100px] text-center bg-[#F9F6ED]">
+      <section className="pt-[150px] lg:pt-[155px] xl:pt-[240px] pb-[50px] xl:pb-[100px] text-center bg-[url('/assets/imgs/bg.png')] bg-no-repeat bg-[#F9F6ED] bg-cover">
         <div className="container" ref={containerRef}>
           <div className="pb-[35px] md:pb-[50px] lg:pb-[100px]">
             <div className="max-w-[242px] pb-[22px] mx-auto">

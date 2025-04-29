@@ -3,8 +3,7 @@ import Link from "next/link";
 
 // types
 import { ServiceDetailsType } from "@/types";
-import CTA1 from "../../cta/cta1";
-import CTA2 from "../../cta/cta2";
+
 
 type Props = {
   service: {
@@ -20,13 +19,13 @@ const ServiceCard2 = ({ service }: Props) => {
       <div className="pb-[16px] md:pb-[35px] w-[60px] mx-auto">
         <Image width={60} height={60} src={image} alt="icon" />
       </div>
-      <Link href="#">
+      <Link href={`/feature/${service.data.url}`}>
         <h3 className="text-[18px] xl:text-[24px] max-w-[182px] mx-auto pb-[10px] md:pb-[16px]">
           {title}
         </h3>
       </Link>
       <p className="pb-[20px] lg:pb-[32px]">{short_description}</p>
-      <Link href="#" className="inline-block">
+      <Link href={`/feature/${service.data.url}`} className="inline-block">
         <div className="rounded-full p-0 flex justify-center items-center w-[50px] h-[50px] md:w-[60px] md:h-[60px] bg-transparent border border-border hover:bg-theme">
           <Image
             width={19}

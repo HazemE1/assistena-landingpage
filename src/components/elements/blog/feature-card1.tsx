@@ -20,7 +20,7 @@ const FeatureCard1 = ({ blog, allowBtn = true }: Props) => {
   return (
     <article>
       <div className="rounded-theme overflow-hidden">
-        <Link href={`/blog/${blog.slug}`}>
+        <Link href={`/feature/${blog.slug}`}>
           <Image
             width={400}
             height={300}
@@ -41,7 +41,7 @@ const FeatureCard1 = ({ blog, allowBtn = true }: Props) => {
         {allowBtn && (
           <div className="mt-[25px] xl:mt-[40px]">
             <Link
-              href={`/blog/${blog.slug}`}
+              href={`/feature/${blog.slug}`}
               className={cn(
                 buttonVariants({ variant: "normal" }),
                 "underline text-primary underline-offset-4 !p-0 !h-auto"
